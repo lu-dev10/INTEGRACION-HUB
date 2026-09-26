@@ -12,6 +12,7 @@
   2. Implementar pruebas unitarias / de integración correspondientes.
   3. Respetar la arquitectura Monolito Modular documentada en [`docs/02-modulos.md`](docs/02-modulos.md).
   4. Mantener la documentación técnica sincronizada en [`docs/`](docs/).
+  5. **Registro técnico obligatorio por módulo**: Documentar de forma progresiva y detallada cada avance técnico en `modulos/moduloX.md` para cada épica/módulo desarrollado.
 - **Stack Obligatorio**:
   - Backend: Java 21 (LTS) + Spring Boot 3.3.x + Maven + PostgreSQL.
   - Frontend: Angular 18+ (Standalone components, reactive forms).

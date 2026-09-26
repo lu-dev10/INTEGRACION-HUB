@@ -195,7 +195,9 @@ Feature: Diagnóstico de Salud y Scaffolding Inicial
 
 ## 4. Definition of Done (DoD) para este Paso
 - [x] Documento técnico creado en `modulos/modulo1.md`.
-- [ ] Archivo `docker-compose.yml` creado y contenedor de base de datos aprovisionado.
-- [ ] `pom.xml` estructurado con todas las dependencias del MVP.
-- [ ] `HealthController` implementado y expuesto en `/api/v1/health`.
-- [ ] Aplicación validada y respondiendo.
+- [x] Archivo `docker-compose.yml` creado con configuración de PostgreSQL 16.
+- [x] `pom.xml` estructurado y dependencias descargadas con Java 21 y Maven 3.9.9.
+- [x] `HealthController` y `HealthControllerTest` implementados.
+- [x] **Pruebas unitarias ejecutadas:** `HealthControllerTest` 2/2 exitosas (`BUILD SUCCESS`).
+- [ ] Base de datos PostgreSQL 16 inicializada en puerto 5432 con base de datos `integration_hub_db`.
+- [ ] Aplicación levantada y respondiendo en `http://localhost:8080/api/v1/health`.
