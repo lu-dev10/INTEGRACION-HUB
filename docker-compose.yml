@@ -1,0 +1,22 @@
+services:
+  integration-hub-db:
+    image: postgres:16-alpine
+    container_name: integration-hub-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: integration_hub_db
+      POSTGRES_USER: hub_user
+      POSTGRES_PASSWORD: hub_password_2026
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hub_user -d integration_hub_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+    driver: local
